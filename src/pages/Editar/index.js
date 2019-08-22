@@ -3,5 +3,5 @@ import React from 'react';
 // import { Container } from './styles';
 
 export default function Editar() {
-  return <div />;
+  return <h1>NOVO</h1>;
 }

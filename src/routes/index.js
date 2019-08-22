@@ -9,6 +9,7 @@ import DashBoard from '../pages/Dashboard';
 import Detalhes from '../pages/Detalhes';
 import Editar from '../pages/Editar';
 import Perfil from '../pages/Perfil';
+import Novo from '../pages/Novo';
 
 export default function Routes() {
   return (
@@ -24,6 +25,8 @@ export default function Routes() {
       <Route path="/edit" component={Editar} isPrivate />
 
       <Route path="/profile" component={Perfil} isPrivate />
+
+      <Route path="/novo" component={Novo} isPrivate />
     </Switch>
   );
 }

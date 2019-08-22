@@ -48,6 +48,10 @@ export const Content = styled.div`
     font-weight: bold;
   }
 
+  img {
+    height: 100px;
+  }
+
   button {
     margin: 5px 0 0;
     height: 44px;
