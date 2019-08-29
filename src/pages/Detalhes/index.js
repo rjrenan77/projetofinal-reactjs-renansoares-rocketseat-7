@@ -19,7 +19,7 @@ export default function Detalhes() {
 
   const [meetupSelected, setMeetupSelected] = useState([]);
   const id = window.location.search.replace('?id=', '');
-  console.log(id);
+  // console.log(id);
 
   function handleDelete() {
     dispatch(meetupDelete(id));
@@ -29,14 +29,14 @@ export default function Detalhes() {
     async function loadMeetupSelected() {
       const response = await api.get(`meetups/${id}`);
 
-      console.log(response.data);
+      // console.log(response.data);
 
       const dados = response.data;
 
       setMeetupSelected(dados);
     }
     loadMeetupSelected();
-  }, []);
+  }, [id]);
 
   return (
     <Container>
